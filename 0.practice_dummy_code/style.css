@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#box1{
+    height:200px;
+    width:200px;
+    position:relative;
+    background-color:rgb(235, 192, 23);
+    animation-name:box-anime;
+    animation-duration:2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+}
+#box2{
+    height:200px;
+    width:200px;
+    position:absolute;
+    background-color:rgb(14, 228, 10);
+    animation-name:box-anime;
+    animation-delay:2s;
+    animation-duration:2s;
+}
+@keyframes box-anime {
+   0%{
+    left:0;
+    top:0;
+   }
+   100%{
+    left:80%;
+    top:0;
+   }
+}
